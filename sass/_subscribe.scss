@@ -1,0 +1,98 @@
+.subscribe__container {
+    padding-top: 196px;
+    padding-bottom: 196px;
+}
+.subscribe__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.subscribe__title {
+    margin-bottom: 40px;
+    letter-spacing: 3.84px;
+    text-align: center;
+    &::after {
+        display: block;
+        content: "";
+        margin: 0 auto;
+        max-width: 461px;
+        margin-top: 37px;
+        border-bottom: 1px solid #C4C4C4;;
+    }
+}
+.subscribe__text {
+    max-width: 647px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.subscribe__input {
+    width: 592px;
+    padding: 15px 27px;
+    border-radius: 20px 0px 0px 0px;
+    background: #EEE;
+}
+.subscribe__button {
+    margin-left: -10px;
+    padding: 14px 42px;
+    border-radius: 0px 0px 20px 0px;
+    border: 1px solid var(--button-color);
+    background-image: linear-gradient(#fff, #fff);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    transition: background-size .5s, color .5s;
+}
+@media screen and (max-width: 1439.98px) {
+    .subscribe__container {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+}
+@media screen and (max-width: 1199.98px) {
+    .subscribe__container {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+}
+@media screen and (max-width: 991.98px) {
+    .subscribe__container {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .subscribe__input {
+        width: 420px;
+    }
+}
+@media screen and (min-width: 991.98px) {
+    .subscribe__button {
+        &:hover {
+            background-size: 100% 100%;
+            color: var(--button-color);
+        }
+    }
+}
+@media screen and (max-width: 767.98px) {
+    .subscribe__container {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .subscribe__input {
+        width: 320px;
+    }
+}
+@media screen and (max-width: 557.98px) {
+    .subscribe__form {
+        display: flex;
+        flex-direction: column;
+    }
+    .subscribe__input {
+        width: 100%;
+        border-radius: 20px 0px;
+        margin-bottom: 10px;
+    }
+    .subscribe__button {
+        width: 100%;
+        margin-left: 0px;
+        border-radius: 20px 0px;
+    }
+}

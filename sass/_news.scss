@@ -1,0 +1,127 @@
+.news__container {
+    padding-top: 93px;
+    padding-bottom: 122px;
+}
+.news__lable {
+    margin-bottom: 11px;
+    text-align: center;
+}
+.news__title {
+    margin-bottom: 83px;
+    text-align: center;
+}
+.news__list {
+    display: flex;
+    gap: 150px;
+}
+.news__item {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 50%;
+}
+.news__wrapper-img {
+    position: relative;
+    z-index: 5;
+    max-width: 555px;
+    &::before {
+        position: absolute;
+        z-index: -1;
+        top: 16px;
+        left: 17px;
+        content: "";
+        display: block;
+        width: calc(100% / 1);
+        height: calc(100% / 1);
+        border-radius: 100px 0px;
+        border: 2px solid #B0855B;
+    }
+}
+.news__img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 100px 0px;
+}
+.news__thumb {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-top: 42px;
+}
+.news__subtitle {
+    flex-grow: 1;
+    margin-bottom: 17px;
+    color: var(--black-color);
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 93.333%;
+}
+.news__text {
+    justify-items: flex-start;
+    margin-bottom: 45px;
+}
+.news__button {
+    padding: 13px 35px;
+    border: 1px solid var(--button-color);
+    background-image: linear-gradient(#fff, #fff);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    transition: background-size .5s, color .5s;
+}
+@media screen and (max-width: 1439.98px) {
+    .news__list {
+        gap: 80px;
+    }
+    .news__subtitle {
+        line-height: 103.333%;
+    }
+}
+@media screen and (max-width: 1199.98px) {
+    .news__list {
+        gap: 80px;
+    }
+}
+@media screen and (max-width: 991.98px) {
+    .news__container {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .news__title {
+        margin-bottom: 20px;
+    }
+    .news__list {
+        gap: 40px;
+    }
+    .news__thumb {
+        margin-top: 30px;
+    }
+    .news__text {
+        margin-bottom: 20px;
+    }
+}
+@media screen and (min-width: 991.98px) {
+    .news__button {
+        &:hover {
+            background-size: 100% 100%;
+            color: var(--button-color);
+        }
+    }
+}
+@media screen and (max-width: 767.98px) {
+    .news__container {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .news__list {
+        flex-direction: column;
+    }
+    .news__subtitle {
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 479.98px) {
+    .news__button {
+        padding: 13px 20px;
+    }
+}
